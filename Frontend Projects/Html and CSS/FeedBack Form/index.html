@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 id="title">Community Feedback Form</h1>
+  <p id="description">We’d love to hear your thoughts and ideas to help us improve our platform</p>
+
+  <form id="survey-form">
+
+    <div class="box">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="box">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="box">
+      <label for="number">Your Age</label>
+      <input type="number" id="number" name="age" min="13" max="100" placeholder="Age">
+    </div>
+
+    <div class="box">
+      <label for="role">What best describes you?</label>
+      <select id="dropdown" name="role" required>
+        <option value="">Choose one</option>
+        <option value="student">Student</option>
+        <option value="developer">Working Developer</option>
+        <option value="learner">Learning to Code</option>
+        <option value="teacher">Teacher / Mentor</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="box">
+      <label>Would you recommend this community to others?</label>
+      <div class="option-group">
+        <label><input type="radio" name="recommend" value="yes"> Yes</label>
+        <label><input type="radio" name="recommend" value="maybe"> Maybe</label>
+        <label><input type="radio" name="recommend" value="no"> No</label>
+      </div>
+    </div>
+
+    <div class="box">
+      <label>What features would you like to see more of? (Check all that apply)</label>
+      <div class="option-group">
+        <label><input type="checkbox" name="improve" value="tutorials"> Tutorials</label>
+        <label><input type="checkbox" name="improve" value="projects"> Projects</label>
+        <label><input type="checkbox" name="improve" value="events"> Community Events</label>
+        <label><input type="checkbox" name="improve" value="support"> Mentorship & Support</label>
+        <label><input type="checkbox" name="improve" value="resources"> Extra Resources</label>
+      </div>
+    </div>
+
+    <div class="box">
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Share your feedback here..."></textarea>
+    </div>
+
+    <div class="box">
+      <button type="submit" id="submit">Send Feedback</button>
+    </div>
+
+  </form>
+</body>
+</html>
