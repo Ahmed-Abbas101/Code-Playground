@@ -1,0 +1,13 @@
+.toggle-button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.toggle-button button{
+        text-align: center;
+}
+
+#message{
+
+}
